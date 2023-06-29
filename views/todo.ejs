@@ -9,7 +9,6 @@
                 text-decoration: none;
                 color: black;
             }
-
         </style>
     </head>
 
@@ -35,3 +34,32 @@
     </body>
 
 </html>
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
+// Create Schema
+const CategorySchema = new Schema({
+  id: {
+    type: Schema.Types.ObjectId,
+  },
+  name: {
+    type: String,
+    required: true,
+  },
+});
+
+module.exports = Category = mongoose.model("category", CategorySchema);
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
